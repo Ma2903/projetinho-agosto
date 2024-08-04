@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homenagem ao Meu Pai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Feliz Dia dos Pais, Dad!</h1>
+    </header>
+    <main>
+        <section id="message-section">
+            <h2>Mensagem Especial</h2>
+            <p id="special-message">Pai, você é o melhor! Obrigado por tudo que você faz por mim. Eu te amo muito!</p>
+        </section>
+        <section id="gallery-section">
+            <h2>Galeria de Fotos</h2>
+            <div class="gallery">
+                <img src="src/lago.jpeg" alt="Foto no lago" onclick="openModal(this)">
+                <img src="src/shopping.jpeg" alt="Foto no shopping" onclick="openModal(this)">
+                <img src="src/praia.jpeg" alt="Foto na praia" onclick="openModal(this)">
+                <img src="src/pastel.jpeg" alt="Foto no pastel" onclick="openModal(this)">
+                <img src="src/formatura.jpeg" alt="Foto da formatura" onclick="openModal(this)">
+                <img src="src/diadospais.jpeg" alt="Foto do dia dos pais" onclick="openModal(this)">
+                <img src="src/selfie.jpeg" alt="Selfie" onclick="openModal(this)">
+                <img src="src/luta.jpeg" alt="Foto da luta" onclick="openModal(this)">
+            </div>
+        </section>
+        <section id="messages-section">
+            <h2>Mensagens</h2>
+            <div id="messages">
+                <div class="message">Obrigado por ser um pai tão incrível!</div>
+                <div class="message">Você é meu herói, pai!</div>
+                <div class="message">Agradeço por todos os momentos que passamos juntos.</div>
+                <div class="message">Sua força e amor são a base de nossa família.</div>
+                <div class="message">Cada conselho seu é uma pérola de sabedoria.</div>
+                <div class="message">Você sempre sabe como fazer os dias mais difíceis parecerem mais fáceis.</div>
+                <div class="message">Sua paciência e compreensão fazem você ser um pai excepcional.</div>
+                <div class="message">Obrigado por sempre acreditar em mim e me apoiar em cada passo.</div>
+                <div class="message">As memórias que criamos juntos são tesouros que guardarei para sempre.</div>
+                <div class="message">Seu amor é o melhor presente que eu poderia ter recebido.</div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Modal para exibir a imagem em tamanho grande -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content-wrapper">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-image">
+            <div id="caption">
+                <h3 id="caption-title"></h3>
+                <p id="caption-text"></p>
+            </div>
+        </div>  
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
