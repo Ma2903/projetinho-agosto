@@ -59,14 +59,9 @@ function updateModal() {
     const imageSrc = images[currentImageIndex];
     const message = messages[imageSrc] || { title: "Título", text: "Mensagem" };
 
-    modalImg.src = imageSrc; // Atualiza o caminho da imagem
+    modalImg.src = `src/${imageSrc}`; // Adiciona o caminho 'src/' para as imagens
     captionTitle.innerHTML = message.title;
     captionText.innerHTML = message.text;
-}
-
-function changeImage(direction) {
-    currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
-    updateModal();
 }
 
 function closeModal() {
